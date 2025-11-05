@@ -55,4 +55,13 @@ object Build1 : BuildType({
 
 object Hey : BuildType({
     name = "hey"
+
+    features {
+        matrix {
+            param("par1", listOf(
+                value("1"),
+                value("2")
+            ))
+        }
+    }
 })
