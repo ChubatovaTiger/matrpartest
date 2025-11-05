@@ -47,7 +47,6 @@ object Build1 : BuildType({
                 value("1"),
                 value("2")
             ))
-            groupArtifactsByBuild = false
         }
     }
 })
