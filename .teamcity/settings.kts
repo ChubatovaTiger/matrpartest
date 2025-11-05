@@ -29,6 +29,7 @@ version = "2025.07"
 project {
 
     buildType(Build1)
+    buildType(Hey)
 }
 
 object Build1 : BuildType({
@@ -47,6 +48,11 @@ object Build1 : BuildType({
                 value("1"),
                 value("2")
             ))
+            groupArtifactsByBuild = false
         }
     }
+})
+
+object Hey : BuildType({
+    name = "hey"
 })
