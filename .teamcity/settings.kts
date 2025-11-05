@@ -45,10 +45,9 @@ object Build1 : BuildType({
     features {
         matrix {
             param("par1", listOf(
-                value("1"),
-                value("2")
+                value("абаба1"),
+                value("аба münchen")
             ))
-            groupArtifactsByBuild = false
         }
     }
 })
@@ -58,6 +57,7 @@ object Hey : BuildType({
 
     features {
         matrix {
+            groupArtifactsByBuild = false
         }
     }
 })
